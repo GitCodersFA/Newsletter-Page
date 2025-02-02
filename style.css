@@ -1,41 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 0.5rem; text-align: center; margin-top: 2.25em;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+*{box-sizing: border-box;}
 
 body{
     background-color: hsl(235, 18%, 26%);
     font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 .container{
     display: flex;
     background-color: white;
     color: hsl(235, 18%, 26%);
     border-radius: 0.8rem;
-    width: 80%;
+    width: 55%;
     margin: auto;
 }
 
 .box1{
-    width: 60%;
+    flex: 2;
     padding: 1.8em 1.5em;
 }
 
 .box2{
-    width: 40%;
+    flex: 2;
     background: url(./assets/images/illustration-sign-up-desktop.svg);
     border-radius: 0.8rem;
     margin: 0.95em 0.8em;
 }
 .main-heading{
     color: hsl(234, 29%, 20%);
+    font-size: 2.8rem;
 }
 
 .submit-btn{
     background-color: hsl(234, 29%, 20%);
     color:white;
-    padding: 0.3em 2.5em;
+    padding: 0.5em 3em;
     border-radius: 3px;
     border: 1px solid black;
+    margin: 0 auto;
 }
 
 
@@ -50,11 +58,15 @@ body{
 .check-icon, .box2{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .box1 ul{
     padding: 0;
+}
+
+.box1 ul li{
+    padding: 0.32em;
 }
 .list-item{
     list-style-type: none;
@@ -62,17 +74,13 @@ body{
 
 .box1 label{
     display: block;
+    margin-bottom: 0.5em;
 }
 
 .container input[type='text']{
-    padding: 0.2em 4em;
-    display: block;
+    padding: 0.5em 4em;
     margin-bottom: 1em;
-}
-
-
-html{
-    font-size: 13px;
+    display: block;
 }
 
 .container p, .list-item, label{
@@ -81,4 +89,22 @@ html{
 
 .box1 label{
     font-weight: bold;
+}
+
+
+@media screen and (max-width:850px) {
+    html{
+        font-size: 10px;
+    }
+
+    *{box-sizing: border-box;}
+    
+    .box1 input[type='text'], .box1 input[type='submit']{
+        padding: 0.5em 4.8em;
+        font-size: 0.8rem;
+    }
+
+    .box1 input[type='text']{
+        padding-right: 6.5em;
+    }
 }
