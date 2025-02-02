@@ -34,7 +34,7 @@ body{
 }
 .main-heading{
     color: hsl(234, 29%, 20%);
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 .submit-btn{
@@ -92,7 +92,7 @@ body{
 }
 
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:950px) {
     html{
         font-size: 10px;
     }
@@ -106,5 +106,29 @@ body{
 
     .box1 input[type='text']{
         padding-right: 6.5em;
+    }
+    .box2{
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    html{
+        font-size: 8px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 50vh;
+        max-width: 50vh;
+        width: 25%;
+    }
+    .box1{
+        flex:1;
+    }
+    .box2{
+        flex:2;
     }
 }
